@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Events using jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+	Enter The Name:<input type="text" name="name"><br>
+	Enter Password:<input type="text" name="password">
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("input").focus(function(){
+			$(this).css("background-color","orange")
+		});
+		$("input").blur(function(){
+			$(this).css("background-color","yellow")
+		});
+	});
+</script>
